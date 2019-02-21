@@ -1,5 +1,7 @@
 # emacs
 *~
+# build dir
+build
 
 # Prerequisites
 *.d
