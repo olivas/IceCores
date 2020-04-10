@@ -4,7 +4,7 @@
 
 void Writer::operator()(Frame& frame){
   std::cout<<"Writer(start)"<<std::endl;
-  std::this_thread::sleep_for(std::chrono::seconds(6));  
+  //std::this_thread::sleep_for(std::chrono::seconds(6));  
   std::cout<<"There are "<<frame.size()<<" elements in this frame."<<std::endl;
   std::cout<<"Writer(stop)"<<std::endl;
 }

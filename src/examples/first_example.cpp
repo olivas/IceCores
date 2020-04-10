@@ -19,7 +19,7 @@ class RecoResult : public FrameObject {};
 class LineFit : public Module{
   void operator()(Frame& frame){
     std::cout<<"LineFit(start)"<<std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(5));
+    //std::this_thread::sleep_for(std::chrono::seconds(5));
     std::shared_ptr<RecoResult> r(new RecoResult);
     frame.put("LineFitResult", r);
     std::cout<<"LineFit(stop)"<<std::endl;
@@ -31,7 +31,7 @@ class LineFit : public Module{
 class TensorOfInertia : public Module{
   void operator()(Frame& frame){
     std::cout<<"TensorOfInertia(start)"<<std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(5));
+    //std::this_thread::sleep_for(std::chrono::seconds(5));
     std::shared_ptr<RecoResult> r(new RecoResult);
     frame.put("ToIResult", r);
     std::cout<<"TensorOfInertia(stop)"<<std::endl;

@@ -16,7 +16,7 @@ void Reader::operator()(Frame& frame){
   std::cout<<"Reader(start)"<<std::endl;
   std::shared_ptr<Vector<double>>  hits(new Vector<double>);
   hits->push_back(1.0);
-  std::this_thread::sleep_for(std::chrono::seconds(1));  
+  //std::this_thread::sleep_for(std::chrono::seconds(1));  
   frame.put(std::string("hits"), hits);
   std::cout<<"Reader(stop)"<<std::endl;
 }
