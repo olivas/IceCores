@@ -8,6 +8,7 @@
 
 const FrameObjectConstPtr&
 Frame::get(const std::string& key) const {
+  std::lock_guard<std::mutex> lock(mutex_);
   return map_.at(key);
 }
 
@@ -29,4 +30,3 @@ size_t
 Frame::size() const {
   return map_.size();
 }
-
