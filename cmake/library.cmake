@@ -1,8 +1,9 @@
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${Boost_INCLUDE_DIRS})
 
 add_library(icecores SHARED 
-  ${CMAKE_SOURCE_DIR}/src/ice_cores/tray.cpp
+  #${CMAKE_SOURCE_DIR}/src/ice_cores/tray.cpp
   ${CMAKE_SOURCE_DIR}/src/ice_cores/frame.cpp
   ${CMAKE_SOURCE_DIR}/src/ice_cores/modules/reader.cpp
   ${CMAKE_SOURCE_DIR}/src/ice_cores/modules/writer.cpp
