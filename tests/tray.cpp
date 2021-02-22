@@ -11,6 +11,17 @@ BOOST_AUTO_TEST_CASE(instantiation){
   EmptyFrameSource source;
   DummyFrameSink sink;
 
-  Tray<EmptyFrameSource, DummyFrameSink> tray(source, sink);  
-  
+  Tray<EmptyFrameSource, DummyFrameSink> tray(std::move(source), sink);
+
+}
+
+BOOST_AUTO_TEST_CASE(execute_pipelines){
+  unsigned n_frames{42};
+  EmptyFrameSource source(n_frames);
+  DummyFrameSink sink;
+
+  Tray<EmptyFrameSource, DummyFrameSink> tray(std::move(source), sink);
+
+  tray.execute_pipelines();
+
 }
