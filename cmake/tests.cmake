@@ -16,3 +16,4 @@ endfunction()
 # They'll all likely link to the icecores library
 # The second argument is source <name>.cpp in the tests directory
 add_unit_test(icecores tray)
+add_unit_test(icecores lock_free_queue)
