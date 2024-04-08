@@ -1,6 +1,8 @@
 # IceCores
 A proof-of-concept project based loosely on IceCube's single-threaded framework IceTray.
 
+![alt text](https://github.com/olivas/IceCores/blob/main/resources/images/fear_the_turtle.png?raw=true)
+
 ## Getting Started
 ### Dependencies
 The only dependencies are modern C++, cmake, and boost.  Prefer a modern standard like 17 or 20.  
