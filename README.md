@@ -1,6 +1,20 @@
 # IceCores
 A proof-of-concept project based loosely on IceCube's single-threaded framework IceTray.
 
+## Getting Started
+### Dependencies
+The only dependencies are modern C++, cmake, and boost.  Prefer a modern standard like 17 or 20.  
+Modern development will assume C++20. 
+
+```shell
+cd IceCores
+mkdir build
+cd build
+cmake ..
+make
+make test
+```
+
 ## Concurrent Data Structures
 IceCube uses a single data structure, called a Frame, modelled on a map<string, base_ptr> 
 that's used to share data between modules.  Modules retrieve data from the Frame necessary
