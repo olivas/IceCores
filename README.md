@@ -1,7 +1,12 @@
 # IceCores
-A proof-of-concept project based loosely on IceCube's single-threaded framework IceTray.
+A proof-of-concept project based loosely on IceCube's single-threaded framework IceTray.  
+The execution model forms a DAG, where a single DAG represents an HPC job or task. 
 
 ![alt text](https://github.com/olivas/IceCores/blob/main/resources/images/fear_the_turtle.png?raw=true)
+
+This framework supports any DAG topology.  The image above is for illustration purposes, and
+intended to represent a turtle to pay tribute to the University of Maryland at College Park 
+where this project was initially developed.
 
 ## Getting Started
 ### Dependencies
